@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Natalia</title>
+</head>
+<body>
+	<h1 id="name"></h1>
+	<script>
+		const name = "Natalia";
+		let i = 0;
+		const intervalId = setInterval(() => {
+			if (i < name.length) {
+				document.getElementById("name").textContent += name.charAt(i);
+				i++;
+			} else {
+				clearInterval(intervalId);
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
+
